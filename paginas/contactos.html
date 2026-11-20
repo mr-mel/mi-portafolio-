@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
+    <meta name="description" content="Contacto Melo">
 </head>
 
 <body>
     <header>
-
+        <h1>CONTACTOS MELO</h1>
+        <nav> <!-- Este es un comentario en nav poner siempre la carpeta-->
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- LINKS -->
-        <p> Contáctame:
-            <br>
-            <a href="mailto:melokramelo@gmail.com">Escríbeme</a>
-            <br>
-            <a href="https://www.linkedin.com/in/melissa-medina-55b04b22b" target="_blank">
-                LinkedIn:p</a>
-            <br>
-            <a href="https://github.com/mr-mel" target="_blank">Mi GitHub</a>
-        </p>
+        <section id="contactos">
+            <!-- LINKS -->
+            <p> Contáctame:
+                <br>
+                <a href="mailto:melokramelo@gmail.com">Escríbeme</a>
+                <br>
+                <a href="https://www.linkedin.com/in/melissa-medina-55b04b22b" target="_blank">
+                    LinkedIn:p</a>
+                <br>
+                <a href="https://github.com/mr-mel" target="_blank">Mi GitHub</a>
+            </p>
+        </section>
+        <section id="formulario-contacto">
+            <fieldset>
+                <legend>Formulario de Contacto</legend>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" required>
+                <br><br>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono">
+                <br><br>
+                <select name="asunto" id="Asunto">
+                    <option value="saludos">Saludos</option>
+                    <option value="notificaciones">Notificaciones</option>
+                    <option value="sugerencias">Sugerencias</option>
+                </select>
+                <br><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <br><br>
+                <input type="checkbox" name="aceptar" id="acepto que me contacten" required>
+                <label for="acepto que me contacten">Acepto que me contacten</label>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+            </fieldset>
+        </section>
     </main>
     <footer> <em> 2026 Melo, Sacacoyo &copy© </em></footer>
 </body>
