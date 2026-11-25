@@ -1,0 +1,33 @@
+:root { 
+  /* Paleta del sitio */ 
+  --primario: #1E2433; 
+  --secundario: #b20502; 
+  --acento: #ffb41eef; 
+  --fondo: #ebebeb; 
+  --texto: #010101; 
+} 
+h1 { 
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: var(--fondo);
+  background-color: #1E2433;
+  border: 2px solid var(--secundario); 
+  a hover { color: var(--acento); text-decoration: underline; }
+}
+
+
+body { 
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--texto); 
+  background-color: var(--fondo); 
+} 
+  
+h2, h3 { color: var(--secundario); } 
+  
+a { color: var(--primario); text-decoration: none; } 
+a:hover { color: var(--acento); text-decoration: underline; } 
