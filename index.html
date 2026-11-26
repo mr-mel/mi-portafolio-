@@ -25,7 +25,7 @@
      <!-- Titulo-->
      <header>
           <h1>MELISSA MEDINA</h1>
-          <nav> <!-- Este es un comentario en nav poner siempre la carpeta-->
+          <nav> <!-- Este es un comentario en nav poner siempre la carpeta (menú)-->
                <ul>
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="paginas/proyectos.html">Proyectos</a></li>
@@ -35,41 +35,43 @@
      </header>
 
      <!-- Primera seccion -->
-     <main>
-          <section id="sobre-mi">
-               <h2>SOBRE MI</h2>
-               <figure>
-                    <img src="img/avatar.png" alt="Melo en la oscuridad" width="300" height="300">
-                    <figcaption> Hola soy Melo</figcaption>
-               </figure>
-               <p class = "destacado">
-                    Hola soy Melo, estudié <em>animación</em>,
-                    <br> me gusta leer, comer y los videojuegos.
-                    <br> Actualmente vivo en <strong>Sacacoyo</strong>
-               </p>
-          </section>
-          <!-- Seccion 2-->
-          <section id="mis-metas">
-               <h3>MIS METAS</h3>
-               <article>
-                    <p>Quiero aprender lo mas que pueda y aplicarlo a mis conocimientos, </p>
-               </article>
-               <article>
-                    <p>mi meta a largo plazo es trabajar en diseño web.</p>
-               </article>
-          </section>
-          <!-- Seccion 3-->
-          <section id="HABILIDADES">
-               <h3>MIS HABILIDADES</h3>
-               <ul>
-                    <li>Diseño</li>
-                    <li>Animación</li>
-                    <li>3D</li>
-                    <li>Carisma y</li>
-                    <li>Creatividad</li>
-               </ul>
-          </section>
-     </main>
+     <div class="contenedor">
+          <main>
+               <section class="tarjeta" id="sobre-mi">
+                    <h2>SOBRE MI</h2>
+                    <figure>
+                         <img src="img/avatar.png" alt="Melo en la oscuridad" width="200" height="200">
+                         <figcaption> Hola soy Melo</figcaption>
+                    </figure>
+                    <p class="destacado">
+                         Hola soy Melo, estudié <em>animación</em>,
+                         <br> me gusta leer, comer y los videojuegos.
+                         <br> Actualmente vivo en <strong>Sacacoyo</strong>
+                    </p>
+               </section>
+               <!-- Seccion 2-->
+               <section class="tarjeta" id="mis-metas">
+                    <h3>MIS METAS</h3>
+                    <article>
+                         <p>Quiero aprender lo mas que pueda y aplicarlo a mis conocimientos, </p>
+                    </article>
+                    <article>
+                         <p>mi meta a largo plazo es trabajar en diseño web.</p>
+                    </article>
+               </section>
+               <!-- Seccion 3-->
+               <section class="tarjeta" id="HABILIDADES">
+                    <h3>MIS HABILIDADES</h3>
+                    <ul>
+                         <li>Diseño</li>
+                         <li>Animación</li>
+                         <li>3D</li>
+                         <li>Carisma y</li>
+                         <li>Creatividad</li>
+                    </ul>
+               </section>
+          </main>
+     </div>
      <br><br><br><br>
      <footer> <em> 2026 Melo, Sacacoyo &copy© </em></footer>
 </body>

@@ -1,33 +1,100 @@
-:root { 
-  /* Paleta del sitio */ 
-  --primario: #1E2433; 
-  --secundario: #b20502; 
-  --acento: #ffb41eef; 
-  --fondo: #ebebeb; 
-  --texto: #010101; 
-} 
-h1 { 
+/* Primeras reglas de tu archivo */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  /* Paleta del sitio */
+  --primario: #1E2433;
+  --secundario: #b20502;
+  --acento: #ffb41eef;
+  --fondo: #ebebeb;
+  --texto: #010101;
+}
+
+h1 {
   font-family: "Special Gothic Expanded One", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   color: var(--fondo);
   background-color: #1E2433;
-  border: 2px solid var(--secundario); 
-  a hover { color: var(--acento); text-decoration: underline; }
+  border: 2px solid var(--secundario);
+
+  a hover {
+    color: var(--acento);
+    text-decoration: underline;
+  }
 }
 
 
-body { 
+body {
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: var(--texto); 
-  background-color: var(--fondo); 
-} 
-  
-h2, h3 { color: var(--secundario); } 
-  
-a { color: var(--primario); text-decoration: none; } 
-a:hover { color: var(--acento); text-decoration: underline; } 
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+h2,h3 {
+  color: var(--secundario);
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+a {
+  color: var(--primario);
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: var(--acento);
+  text-decoration: underline;
+}
+
+.contenedor {
+  width: 900px;
+  max-width: 1100%;
+  margin: auto;
+}
+
+.tarjeta {
+  background-color: var(--fondo);
+  padding: 1rem;
+  border: 1px solid rgb(233, 237, 237);
+  border-radius: 5px 5px 25px 25px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 0px 10px rgba(4, 36, 63, 0.483);
+}
+
+.boton {
+  background-color: var(--secundario);
+  color: var(--fondo);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--acento);
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
